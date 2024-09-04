@@ -1,11 +1,8 @@
 server:
-  port: 8094
+  port: 8093
 
 spring:
   application:
-    name: place
-
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
+    name: place-service
+  profiles:
+    active: dev
