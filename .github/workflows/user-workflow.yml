@@ -51,7 +51,7 @@ jobs:
           gradle clean build --exclude-task test
 
       - name: Setup Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v2
 
       - name: Docker Hub Login
         run: echo "${{ env.DOCKER_PASSWORD }}" | docker login --password-stdin -u "${{ env.DOCKER_USERNAME }}" -- ${{ env.CI_REGISTRY }}
