@@ -12,4 +12,9 @@ public class UserController {
         return ResponseEntity.ok("Hello User");
     }
 
+    @GetMapping("/goodbye")
+    public ResponseEntity<String> goodbye() {
+        return ResponseEntity.ok("Goodbye User");
+    }
+
 }
