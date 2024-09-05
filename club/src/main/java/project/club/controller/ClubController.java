@@ -12,4 +12,9 @@ public class ClubController {
         return ResponseEntity.ok("Hello Club");
     }
 
+    @GetMapping("/goodbye")
+    public ResponseEntity<String> goodbye() {
+        return ResponseEntity.ok("Goodbye Club");
+    }
+
 }
