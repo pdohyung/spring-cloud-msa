@@ -72,7 +72,7 @@ jobs:
         with:
           valueFile: 'values.yaml'
           value: ${{ env.SEQUENCE_NUMBER }}
-          propertyPath: 'deployment.eureka.image.tag'
+          propertyPath: 'eurekaDeployment.gigboardEureka.image.tag'
           message: 'CI: Update Eureka Image Tag to ${{ env.SEQUENCE_NUMBER }}'
           commitChange: true
           branch: main
